@@ -7,6 +7,7 @@ include:
 {%- for item in haproxy_items %}
   - {{ item }}
 {%- endfor %}
+  - haproxy.repository
   - haproxy.install
   - haproxy.service
   - haproxy.config
